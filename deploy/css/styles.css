@@ -485,8 +485,8 @@ footer img {
 ============= */
 #about {
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". about .";
+  grid-template-columns: 16px auto auto 16px;
+  grid-template-areas: ". about about2 .";
 }
 #about > div {
   grid-area: about;
