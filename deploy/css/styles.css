@@ -443,16 +443,31 @@ header > div {
 /* =============
     Footer
 ============= */
-footer > div {
+footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+}
+footer > div {
   grid-area: footer;
+  background-color: blue;
+}
+footer img {
+  width: 5%;
 }
 
 /* =============
     Search
 ============= */
+#search {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+#search > div {
+  grid-area: search;
+}
+
 /* =============
     Hero
 ============= */
@@ -474,3 +489,11 @@ footer > div {
 /* =============
     Articles
 ============= */
+#articles {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". articles .";
+}
+#articles > div {
+  grid-area: articles;
+}
