@@ -483,6 +483,18 @@ footer img {
 /* =============
     About
 ============= */
+#about {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". about .";
+}
+#about > div {
+  grid-area: about;
+}
+#about img {
+  width: 20%;
+}
+
 /* =============
     Hero2
 ============= */

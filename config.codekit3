@@ -29,28 +29,28 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/images\/about\/about-us.jpg" : {
-      "ft" : 16384,
-      "iS" : 14489,
-      "jF" : 0,
+    "\/deploy\/images\/about\/about1.png" : {
+      "ft" : 32768,
+      "iS" : 19866,
       "oA" : 0,
-      "oAP" : "\/deploy\/images\/about\/about-us.jpg",
+      "oAP" : "\/deploy\/images\/about\/about1.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/images\/about\/plan-visit.jpg" : {
-      "ft" : 16384,
-      "iS" : 17061,
-      "jF" : 0,
+    "\/deploy\/images\/about\/about2.png" : {
+      "ft" : 32768,
+      "iS" : 20873,
       "oA" : 0,
-      "oAP" : "\/deploy\/images\/about\/plan-visit.jpg",
+      "oAP" : "\/deploy\/images\/about\/about2.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
