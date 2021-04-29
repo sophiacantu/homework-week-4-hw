@@ -3,11 +3,35 @@
 ============= */
 
 #articles{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". articles .";
+
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". articles .";
+    }
 
     >div{
-        grid-area: articles;
+
+        @include md{
+            grid-area: articles;
+        }
+
+        ul{
+            li{
+                img{
+                    width: 100%;
+                }
+    
+                section{ 
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". articles .";  
+    
+                    >div{
+                        grid-area: articles;
+                    }
+                }
+            }
+        }
     }
 }

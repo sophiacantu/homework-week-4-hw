@@ -565,21 +565,68 @@ footer img {
 #hero2 ul {
   display: grid;
 }
+@media (min-width: 768px) {
+  #hero2 ul {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 992px) {
+  #hero2 ul {
+    grid-template-columns: 60% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 ul {
+    grid-template-columns: 65% auto;
+    grid-template-areas: "h2-1 h2-2" "h2-1 h2-3";
+  }
+}
 #hero2 ul li img {
   width: 100%;
 }
+@media (min-width: 1200px) {
+  #hero2 ul #h2-1 {
+    grid-area: h2-1;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 ul #h2-2 {
+    grid-area: h2-2;
+  }
+}
 #hero2 ul #h2-3 {
   display: none;
+}
+@media (min-width: 1200px) {
+  #hero2 ul #h2-3 {
+    display: list-item;
+    grid-area: h2-3;
+  }
 }
 
 /* =============
     Articles
 ============= */
-#articles {
+@media (min-width: 768px) {
+  #articles {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". articles .";
+  }
+}
+@media (min-width: 768px) {
+  #articles > div {
+    grid-area: articles;
+  }
+}
+#articles > div ul li img {
+  width: 100%;
+}
+#articles > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". articles .";
 }
-#articles > div {
+#articles > div ul li section > div {
   grid-area: articles;
 }

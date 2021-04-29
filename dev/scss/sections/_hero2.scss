@@ -7,14 +7,48 @@
     ul{
         display:grid;
 
+        @include md{
+            grid-template-columns: 50% auto;
+        }
+
+        @include lg{
+            grid-template-columns: 60% auto;
+        }
+
+        @include xl{
+            grid-template-columns: 65% auto;
+            grid-template-areas: 
+            "h2-1 h2-2"
+            "h2-1 h2-3";
+        }
+
         li{
             img{
                 width: 100%
             }
         }
 
+        #h2-1{
+
+            @include xl{
+                grid-area: h2-1;
+            }
+        }
+
+        #h2-2{
+
+            @include xl{
+                grid-area: h2-2;
+            }
+        }
+
         #h2-3{
             display: none;
+
+            @include xl{
+                display: list-item;
+                grid-area: h2-3;
+            }
         }
     }
 }
