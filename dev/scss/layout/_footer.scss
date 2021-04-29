@@ -25,6 +25,12 @@ footer{
             "location follow";
         }
 
+        @include xl{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "location signUp follow"
+        }
+
         li{
         
         }

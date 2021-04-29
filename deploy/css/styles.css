@@ -466,6 +466,12 @@ footer > div {
     grid-template-areas: "location signUp" "location follow";
   }
 }
+@media (min-width: 1200px) {
+  footer > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "location signUp follow";
+  }
+}
 @media (min-width: 768px) {
   footer > div #location {
     grid-area: location;
