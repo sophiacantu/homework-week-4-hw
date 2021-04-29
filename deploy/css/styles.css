@@ -530,6 +530,11 @@ footer img {
     grid-template-areas: ". about-section.";
   }
 }
+@media (min-width: 1200px) {
+  #about {
+    grid-template-columns: auto 1000px auto;
+  }
+}
 #about ul {
   display: grid;
   gap: 16px;

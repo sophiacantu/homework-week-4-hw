@@ -10,6 +10,10 @@
         grid-template-areas: ". about-section.";
     }
 
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
+
     ul{
 
         display: grid;
