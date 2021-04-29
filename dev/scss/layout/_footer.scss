@@ -3,13 +3,19 @@
 ============= */
 
 footer{
+
+    background-color: $purpleDark;
+    color: $white;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
  
     >div{
         grid-area: footer;
-        background-color: blue;
         // border: 1px solid blue;
     }
 

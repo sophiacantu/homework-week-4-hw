@@ -445,13 +445,19 @@ header > div {
     Footer
 ============= */
 footer {
+  background-color: #2D215D;
+  color: #fff;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
 }
+@media (min-width: 1200px) {
+  footer {
+    grid-template-columns: auto 1200px auto;
+  }
+}
 footer > div {
   grid-area: footer;
-  background-color: blue;
 }
 footer img {
   width: 5%;
@@ -566,7 +572,7 @@ footer img {
   #hero2 {
     display: grid;
     grid-template-columns: auto 1200px auto;
-    grid-template-columns: ". hero2 .";
+    grid-template-areas: ". hero2 .";
   }
 }
 #hero2 ul {

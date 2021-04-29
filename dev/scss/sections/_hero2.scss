@@ -8,7 +8,7 @@
         display: grid;
         grid-template-columns: auto 1200px auto;
 
-        grid-template-columns: ". hero2 .";
+        grid-template-areas: ". hero2 .";
     }
 
     ul{
