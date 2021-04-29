@@ -523,18 +523,35 @@ footer img {
 /* =============
     About
 ============= */
+@media (min-width: 768px) {
+  #about {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". about-section.";
+  }
+}
+#about ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #about ul {
+    grid-template-columns: 50% auto;
+    gap: 24px;
+    grid-area: about-section;
+  }
+}
 #about ul li {
   display: grid;
-  grid-template-columns: 16px auto auto 16px;
-  grid-template-areas: ". about about2 .";
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". about .";
   background-color: #2D215D;
-  gap: 16px;
 }
 #about ul li > div {
   grid-area: about;
 }
 #about img {
-  width: 5%;
+  width: 20%;
 }
 
 /* =============
