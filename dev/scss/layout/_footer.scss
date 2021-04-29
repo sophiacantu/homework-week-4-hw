@@ -17,6 +17,35 @@ footer{
     >div{
         grid-area: footer;
         // border: 1px solid blue;
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "location signUp"
+            "location follow";
+        }
+
+        li{
+        
+        }
+
+        #location{
+            @include md{
+                grid-area: location;
+            }
+        }
+
+        #signUp{
+            @include md{
+                grid-area: signUp;
+            }
+        }
+
+        #follow{
+            @include md{
+                grid-area: follow;
+            }
+        }
     }
 
     img{

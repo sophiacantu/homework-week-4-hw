@@ -459,6 +459,28 @@ footer {
 footer > div {
   grid-area: footer;
 }
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "location signUp" "location follow";
+  }
+}
+@media (min-width: 768px) {
+  footer > div #location {
+    grid-area: location;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #signUp {
+    grid-area: signUp;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #follow {
+    grid-area: follow;
+  }
+}
 footer img {
   width: 5%;
 }
