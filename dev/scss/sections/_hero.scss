@@ -3,11 +3,37 @@
 ============= */
 
 #hero{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". hero .";
-
-    >div{
-        grid-area: hero;
+    img{
+        width: 100%
     }
+  
+    ul{
+
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
+        }
+    
+        li{
+
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". hero .";
+    
+            a{
+                grid-area: hero;
+            }
+
+        }
+
+        #hero-sub-1{
+            background-color: $purple;
+        }
+
+        #hero-sub-2{
+            background-color: $purpleLight;
+        }
+
+    }
+   
 }

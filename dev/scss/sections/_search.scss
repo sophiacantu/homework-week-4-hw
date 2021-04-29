@@ -6,10 +6,25 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
+    background-color: #fff;
+
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
 
     >div{
         grid-area: search;
         // border: 1px solid blue;
+
+        form{
+            input{
+
+            }
+
+            button{
+            background-color: $blue;
+            }
+        }
     }
 }
 

@@ -464,21 +464,45 @@ footer img {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+  background-color: #fff;
+}
+@media (min-width: 1200px) {
+  #search {
+    grid-template-columns: auto 1000px auto;
+  }
 }
 #search > div {
   grid-area: search;
+}
+#search > div form button {
+  background-color: #94AFEE;
 }
 
 /* =============
     Hero
 ============= */
-#hero {
+#hero img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #hero ul {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+#hero ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
-#hero > div {
+#hero ul li a {
   grid-area: hero;
+}
+#hero ul #hero-sub-1 {
+  background-color: #926FB1;
+}
+#hero ul #hero-sub-2 {
+  background-color: #C9AEE0;
 }
 
 /* =============
