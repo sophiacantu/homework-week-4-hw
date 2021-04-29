@@ -17,7 +17,26 @@
         }
 
         ul{
+
+            @include md{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "a1 a1 a2 a2"
+                "a3 a3 a4 a4"
+                ". a5 a5 .";
+                gap: 16px
+            }
+
+            @include lg{
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: 
+                "a1 a1 a2 a2 a3 a3"
+                ". a4 a4 a5 a5 ."
+            }
+
             li{
+                background-color: #fff;
                 img{
                     width: 100%;
                 }
@@ -30,6 +49,36 @@
                     >div{
                         grid-area: articles;
                     }
+                }
+            }
+
+            #a1{
+                @include md{
+                    grid-area: a1;
+                }
+            }
+
+            #a2{
+                @include md{
+                    grid-area: a2;
+                }
+            }
+
+            #a3{
+                @include md{
+                    grid-area: a3;
+                }
+            }
+
+            #a4{
+                @include md{
+                    grid-area: a4;
+                }
+            }
+
+            #a5{
+                @include md{
+                    grid-area: a5;
                 }
             }
         }
