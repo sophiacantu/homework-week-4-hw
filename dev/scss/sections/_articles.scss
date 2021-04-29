@@ -10,6 +10,10 @@
         grid-template-areas: ". articles .";
     }
 
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
     >div{
 
         @include md{

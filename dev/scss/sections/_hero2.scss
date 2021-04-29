@@ -4,6 +4,13 @@
 
 #hero2{
 
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+
+        grid-template-columns: ". hero2 .";
+    }
+
     ul{
         display:grid;
 
@@ -16,6 +23,7 @@
         }
 
         @include xl{
+            grid-area: hero2;
             grid-template-columns: 65% auto;
             grid-template-areas: 
             "h2-1 h2-2"

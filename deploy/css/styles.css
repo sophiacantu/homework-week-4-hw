@@ -562,6 +562,13 @@ footer img {
 /* =============
     Hero2
 ============= */
+@media (min-width: 1200px) {
+  #hero2 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-columns: ". hero2 .";
+  }
+}
 #hero2 ul {
   display: grid;
 }
@@ -577,6 +584,7 @@ footer img {
 }
 @media (min-width: 1200px) {
   #hero2 ul {
+    grid-area: hero2;
     grid-template-columns: 65% auto;
     grid-template-areas: "h2-1 h2-2" "h2-1 h2-3";
   }
@@ -612,6 +620,11 @@ footer img {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". articles .";
+  }
+}
+@media (min-width: 1200px) {
+  #articles {
+    grid-template-columns: auto 1200px auto;
   }
 }
 @media (min-width: 768px) {
