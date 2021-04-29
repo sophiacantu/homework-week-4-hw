@@ -9,7 +9,7 @@
     background-color: #fff;
 
     @include xl{
-        grid-template-columns: auto 1000px auto;
+        grid-template-columns: auto 480px 16px;
     }
 
     >div{
