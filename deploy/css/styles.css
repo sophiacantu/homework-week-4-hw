@@ -443,7 +443,7 @@ textarea {
 }
 @media (min-width: 576px) {
   #header > div {
-    grid-template-columns: 35% auto;
+    grid-template-columns: 10% auto;
     grid-template-areas: "headerLogo headerText";
   }
 }
@@ -803,6 +803,8 @@ footer img {
 }
 #articles > div ul li {
   background-color: #fff;
+  background-size: cover;
+  background-position: center;
 }
 #articles > div ul li img {
   width: 100%;
