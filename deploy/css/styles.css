@@ -443,21 +443,21 @@ textarea {
 }
 @media (min-width: 576px) {
   #header > div {
-    grid-template-columns: 20% auto;
-    grid-template-areas: "headerLogo headerText" "headerlogo headerText";
+    grid-template-columns: 35% auto;
+    grid-template-areas: "headerLogo headerText";
   }
 }
 @media (min-width: 768px) {
   #header > div {
     display: grid;
-    grid-template-columns: 20% auto;
-    grid-template-areas: "headerLogo headerText" "headerlogo headerText";
+    grid-template-columns: 35% auto;
+    grid-template-areas: "headerLogo headerText";
   }
 }
 @media (min-width: 1200px) {
   #header > div {
-    grid-template-columns: 20% auto;
-    grid-template-areas: "headerLogo headerText" "headerlogo headerText";
+    grid-template-columns: 35% auto;
+    grid-template-areas: "headerLogo headerText";
   }
 }
 @media (min-width: 768px) {

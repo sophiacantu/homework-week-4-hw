@@ -12,25 +12,22 @@
     >div{
         grid-area: header;
         @include sm{
-            grid-template-columns: 20% auto;
+            grid-template-columns: 35% auto;
             grid-template-areas: 
-            "headerLogo headerText"
-            "headerlogo headerText";
+            "headerLogo headerText";
         }
 
         @include md{
             display: grid;
-            grid-template-columns: 20% auto;
+            grid-template-columns: 35% auto;
             grid-template-areas: 
-            "headerLogo headerText"
-            "headerlogo headerText";
+            "headerLogo headerText";
         }
 
         @include xl{
-            grid-template-columns: 20% auto;
+            grid-template-columns: 35% auto;
             grid-template-areas: 
-            "headerLogo headerText"
-            "headerlogo headerText";
+            "headerLogo headerText";
         }
 
         li{
@@ -57,8 +54,7 @@
                }
         }
     }
-
     img{
-        width: 40%;
+       width: 40%;
     }
 }
