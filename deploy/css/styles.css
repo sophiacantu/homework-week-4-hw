@@ -668,10 +668,12 @@ footer img {
 }
 #hero2 ul {
   display: grid;
+  grid-template-rows: 360px 486px;
 }
 @media (min-width: 768px) {
   #hero2 ul {
     grid-template-columns: 50% auto;
+    grid-template-rows: 625px;
   }
 }
 @media (min-width: 992px) {
@@ -686,13 +688,20 @@ footer img {
     grid-template-areas: "h2-1 h2-2" "h2-1 h2-3";
   }
 }
-#hero2 ul li img {
-  width: 100%;
+#hero2 ul li {
+  background-size: cover;
+  background-position: center;
+}
+#hero2 ul #h2-1 {
+  background-image: url("../images/hero2/hero2two.jpg");
 }
 @media (min-width: 1200px) {
   #hero2 ul #h2-1 {
     grid-area: h2-1;
   }
+}
+#hero2 ul #h2-2 {
+  background-image: url("../images/hero2/hero2one.jpg");
 }
 @media (min-width: 1200px) {
   #hero2 ul #h2-2 {
@@ -701,6 +710,7 @@ footer img {
 }
 #hero2 ul #h2-3 {
   display: none;
+  background-image: url("../images/hero2/tickets.jpg");
 }
 @media (min-width: 1200px) {
   #hero2 ul #h2-3 {
