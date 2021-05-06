@@ -63,6 +63,7 @@
             #a1{
                 @include md{
                     grid-area: a1;
+                    background-color: $blueLight;
                 }
 
                 button{
@@ -74,6 +75,7 @@
             #a2{
                 @include md{
                     grid-area: a2;
+                    background-color: $blueLight;
 
                 button{
                      background-color: $blue;
@@ -85,6 +87,7 @@
             #a3{
                 @include md{
                     grid-area: a3;
+                    background-color: $blueLight;
                 }
 
                 button{
@@ -96,6 +99,7 @@
             #a4{
                 @include md{
                     grid-area: a4;
+                    background-color: $blueLight;
                 }
 
                 button{
@@ -107,6 +111,7 @@
             #a5{
                 @include md{
                     grid-area: a5;
+                    background-color: $blueLight;
                 }
 
                 button{
