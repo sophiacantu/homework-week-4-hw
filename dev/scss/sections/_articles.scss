@@ -14,6 +14,10 @@
         grid-template-columns: auto 1200px auto;
     }
 
+    h2{
+        color: $gray
+    }
+
     >div{
 
         @include md{
@@ -60,11 +64,21 @@
                 @include md{
                     grid-area: a1;
                 }
+
+                button{
+                    background-color: $blue;
+                    color: $grayDark
+                }
             }
 
             #a2{
                 @include md{
                     grid-area: a2;
+
+                button{
+                     background-color: $blue;
+                     color: $grayDark
+                    }
                 }
             }
 
@@ -72,18 +86,33 @@
                 @include md{
                     grid-area: a3;
                 }
+
+                button{
+                    background-color: $blue;
+                    color: $grayDark
+                   }
             }
 
             #a4{
                 @include md{
                     grid-area: a4;
                 }
+
+                button{
+                    background-color: $blue;
+                    color: $grayDark
+                   }
             }
 
             #a5{
                 @include md{
                     grid-area: a5;
                 }
+
+                button{
+                    background-color: $blue;
+                    color: $grayDark
+                   }
             }
         }
     }

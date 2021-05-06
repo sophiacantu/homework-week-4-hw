@@ -35,6 +35,19 @@
             >div{
                 grid-area: about;
                 // border: 1px solid blue;
+
+                button{
+                    background-color: $blue;
+                    color: $grayDark
+                }
+
+                #aboutUs{
+                    color: $white
+                }
+
+                #plan{
+                    color: $white
+                }
             }
 
         }

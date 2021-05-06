@@ -477,15 +477,32 @@ footer > div {
     grid-area: location;
   }
 }
+footer > div #location h4 {
+  color: #CFDDFE;
+}
+footer > div #location address {
+  color: #CFDDFE;
+}
 @media (min-width: 768px) {
   footer > div #signUp {
     grid-area: signUp;
   }
 }
+footer > div #signUp input {
+  background-color: #CFDDFE;
+  color: #293241;
+}
+footer > div #signUp button {
+  background-color: #94AFEE;
+  color: #293241;
+}
 @media (min-width: 768px) {
   footer > div #follow {
     grid-area: follow;
   }
+}
+footer > div #follow ul {
+  color: #fff;
 }
 footer img {
   width: 5%;
@@ -508,8 +525,12 @@ footer img {
 #search > div {
   grid-area: search;
 }
+#search > div form input {
+  color: #293241;
+}
 #search > div form button {
   background-color: #94AFEE;
+  color: #293241;
 }
 
 /* =============
@@ -589,6 +610,16 @@ footer img {
 #about ul li > div {
   grid-area: about;
 }
+#about ul li > div button {
+  background-color: #94AFEE;
+  color: #293241;
+}
+#about ul li > div #aboutUs {
+  color: #fff;
+}
+#about ul li > div #plan {
+  color: #fff;
+}
 #about img {
   width: 20%;
 }
@@ -661,6 +692,9 @@ footer img {
     grid-template-columns: auto 1200px auto;
   }
 }
+#articles h2 {
+  color: #637275;
+}
 @media (min-width: 768px) {
   #articles > div {
     grid-area: articles;
@@ -699,9 +733,17 @@ footer img {
     grid-area: a1;
   }
 }
+#articles > div ul #a1 button {
+  background-color: #94AFEE;
+  color: #293241;
+}
 @media (min-width: 768px) {
   #articles > div ul #a2 {
     grid-area: a2;
+  }
+  #articles > div ul #a2 button {
+    background-color: #94AFEE;
+    color: #293241;
   }
 }
 @media (min-width: 768px) {
@@ -709,13 +751,25 @@ footer img {
     grid-area: a3;
   }
 }
+#articles > div ul #a3 button {
+  background-color: #94AFEE;
+  color: #293241;
+}
 @media (min-width: 768px) {
   #articles > div ul #a4 {
     grid-area: a4;
   }
 }
+#articles > div ul #a4 button {
+  background-color: #94AFEE;
+  color: #293241;
+}
 @media (min-width: 768px) {
   #articles > div ul #a5 {
     grid-area: a5;
   }
+}
+#articles > div ul #a5 button {
+  background-color: #94AFEE;
+  color: #293241;
 }

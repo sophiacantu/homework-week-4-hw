@@ -39,17 +39,39 @@ footer{
             @include md{
                 grid-area: location;
             }
+
+            h4{
+                color: $blueLight
+            }
+
+            address{
+                color:  $blueLight
+            }
         }
 
         #signUp{
             @include md{
                 grid-area: signUp;
             }
+
+            input{
+                background-color: $blueLight;
+                color: $grayDark
+            }
+
+            button{
+                background-color: $blue;
+                color: $grayDark
+               }
         }
 
         #follow{
             @include md{
                 grid-area: follow;
+            }
+
+            ul{
+                color: $white
             }
         }
     }
