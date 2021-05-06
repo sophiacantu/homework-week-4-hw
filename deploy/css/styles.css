@@ -817,6 +817,9 @@ footer img {
 #articles > div ul li section > div {
   grid-area: articles;
 }
+#articles > div ul #a1 {
+  background-color: #CFDDFE;
+}
 @media (min-width: 768px) {
   #articles > div ul #a1 {
     grid-area: a1;
@@ -826,6 +829,9 @@ footer img {
 #articles > div ul #a1 button {
   background-color: #94AFEE;
   color: #fff;
+}
+#articles > div ul #a2 {
+  background-color: #CFDDFE;
 }
 @media (min-width: 768px) {
   #articles > div ul #a2 {
@@ -837,6 +843,9 @@ footer img {
   background-color: #94AFEE;
   color: #fff;
 }
+#articles > div ul #a3 {
+  background-color: #CFDDFE;
+}
 @media (min-width: 768px) {
   #articles > div ul #a3 {
     grid-area: a3;
@@ -847,6 +856,9 @@ footer img {
   background-color: #94AFEE;
   color: #fff;
 }
+#articles > div ul #a4 {
+  background-color: #CFDDFE;
+}
 @media (min-width: 768px) {
   #articles > div ul #a4 {
     grid-area: a4;
@@ -856,6 +868,9 @@ footer img {
 #articles > div ul #a4 button {
   background-color: #94AFEE;
   color: #fff;
+}
+#articles > div ul #a5 {
+  background-color: #CFDDFE;
 }
 @media (min-width: 768px) {
   #articles > div ul #a5 {
