@@ -431,14 +431,53 @@ textarea {
 /* =============
     Header
 ============= */
-header {
+#header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
   background-color: #2D215D;
+  height: 200px;
 }
-header > div {
+#header > div {
   grid-area: header;
+}
+@media (min-width: 576px) {
+  #header > div {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "headerLogo headerText" "headerlogo headerText";
+  }
+}
+@media (min-width: 768px) {
+  #header > div {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: "headerLogo headerText" "headerlogo headerText";
+  }
+}
+@media (min-width: 1200px) {
+  #header > div {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "headerLogo headerText" "headerlogo headerText";
+  }
+}
+@media (min-width: 768px) {
+  #header > div #headerLogo {
+    grid-area: headerLogo;
+  }
+}
+@media (min-width: 768px) {
+  #header > div #headerText {
+    grid-area: headerText;
+  }
+}
+#header > div #headerText h1 {
+  color: #fff;
+}
+#header > div #headerText h4 {
+  color: #fff;
+}
+#header img {
+  width: 40%;
 }
 
 /* =============
@@ -583,7 +622,7 @@ footer img {
   #about {
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". about-section.";
+    grid-template-areas: ". about-section .";
   }
 }
 @media (min-width: 1200px) {
@@ -685,6 +724,7 @@ footer img {
   #hero2 ul {
     grid-area: hero2;
     grid-template-columns: 65% auto;
+    grid-template-rows: 377px 377px;
     grid-template-areas: "h2-1 h2-2" "h2-1 h2-3";
   }
 }
@@ -694,6 +734,11 @@ footer img {
 }
 #hero2 ul #h2-1 {
   background-image: url("../images/hero2/hero2two.jpg");
+}
+@media (min-width: 768px) {
+  #hero2 ul #h2-1 {
+    background-position: 25% 50%;
+  }
 }
 @media (min-width: 1200px) {
   #hero2 ul #h2-1 {

@@ -27,6 +27,7 @@
         @include xl{
             grid-area: hero2;
             grid-template-columns: 65% auto;
+            grid-template-rows: 377px 377px;
             grid-template-areas: 
             "h2-1 h2-2"
             "h2-1 h2-3";
@@ -42,6 +43,10 @@
 
         #h2-1{
             background-image: url("../images/hero2/hero2two.jpg");
+
+            @include md{
+                background-position: 25% 50%;
+            }
 
             @include xl{
                 grid-area: h2-1;

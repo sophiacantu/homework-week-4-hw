@@ -2,14 +2,63 @@
     Header
 ============= */
 
-header{
+#header{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
     background-color: $purpleDark;
+    height: 200px;
 
     >div{
         grid-area: header;
-        // border: 1px solid blue;
+        @include sm{
+            grid-template-columns: 20% auto;
+            grid-template-areas: 
+            "headerLogo headerText"
+            "headerlogo headerText";
+        }
+
+        @include md{
+            display: grid;
+            grid-template-columns: 20% auto;
+            grid-template-areas: 
+            "headerLogo headerText"
+            "headerlogo headerText";
+        }
+
+        @include xl{
+            grid-template-columns: 20% auto;
+            grid-template-areas: 
+            "headerLogo headerText"
+            "headerlogo headerText";
+        }
+
+        li{
+        
+        }
+
+        #headerLogo{
+            @include md{
+                grid-area: headerLogo;
+            }
+        }
+
+        #headerText{
+            @include md{
+                grid-area: headerText;
+            }
+
+            h1{
+                color: $white
+            }
+
+            h4{
+                color: $white
+               }
+        }
+    }
+
+    img{
+        width: 40%;
     }
 }

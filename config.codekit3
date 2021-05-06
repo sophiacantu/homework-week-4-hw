@@ -237,6 +237,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/images\/header\/fl8.png" : {
+      "ft" : 32768,
+      "iS" : 62159,
+      "oA" : 0,
+      "oAP" : "\/deploy\/images\/header\/fl8.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/images\/header\/header_logo.png" : {
       "ft" : 32768,
       "iS" : 14224,
@@ -256,6 +269,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/images\/hero\/hero1.3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/images\/hero\/hero3.jpg" : {
+      "ft" : 16384,
+      "iS" : 685189,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/images\/hero\/hero3.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
