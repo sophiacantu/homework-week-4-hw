@@ -68,7 +68,7 @@
 
                 button{
                     background-color: $blue;
-                    color: $grayDark
+                    color: $white
                 }
             }
 
@@ -76,11 +76,11 @@
                 @include md{
                     grid-area: a2;
                     background-color: $blueLight;
+                }
 
                 button{
                      background-color: $blue;
-                     color: $grayDark
-                    }
+                     color: $white
                 }
             }
 
@@ -92,7 +92,7 @@
 
                 button{
                     background-color: $blue;
-                    color: $grayDark
+                    color: $white
                    }
             }
 
@@ -104,7 +104,7 @@
 
                 button{
                     background-color: $blue;
-                    color: $grayDark
+                    color: $white
                    }
             }
 
@@ -116,7 +116,7 @@
 
                 button{
                     background-color: $blue;
-                    color: $grayDark
+                    color: $white
                    }
             }
         }

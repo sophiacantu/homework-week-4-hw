@@ -537,6 +537,7 @@ footer img {
     Hero
 ============= */
 #hero img {
+  object-fit: cover;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -610,6 +611,37 @@ footer img {
 #about ul li > div {
   grid-area: about;
 }
+#about ul li > div aside div {
+  background-position: center;
+  background-size: cover;
+  height: 85px;
+  width: 85px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #about ul li > div aside div {
+    height: 113px;
+    width: 113px;
+  }
+}
+@media (min-width: 992px) {
+  #about ul li > div aside div {
+    height: 113px;
+    width: 113px;
+  }
+}
+@media (min-width: 1200px) {
+  #about ul li > div aside div {
+    height: 113px;
+    width: 113px;
+  }
+}
+#about ul li > div aside #aboutLeft {
+  background-image: url("../images/about/reel.jpg");
+}
+#about ul li > div aside #planRight {
+  background-image: url("../images/about/city.jpg");
+}
 #about ul li > div button {
   background-color: #94AFEE;
   color: #293241;
@@ -621,7 +653,7 @@ footer img {
   color: #fff;
 }
 #about img {
-  width: 20%;
+  width: 15%;
 }
 
 /* =============
@@ -736,17 +768,17 @@ footer img {
 }
 #articles > div ul #a1 button {
   background-color: #94AFEE;
-  color: #293241;
+  color: #fff;
 }
 @media (min-width: 768px) {
   #articles > div ul #a2 {
     grid-area: a2;
     background-color: #CFDDFE;
   }
-  #articles > div ul #a2 button {
-    background-color: #94AFEE;
-    color: #293241;
-  }
+}
+#articles > div ul #a2 button {
+  background-color: #94AFEE;
+  color: #fff;
 }
 @media (min-width: 768px) {
   #articles > div ul #a3 {
@@ -756,7 +788,7 @@ footer img {
 }
 #articles > div ul #a3 button {
   background-color: #94AFEE;
-  color: #293241;
+  color: #fff;
 }
 @media (min-width: 768px) {
   #articles > div ul #a4 {
@@ -766,7 +798,7 @@ footer img {
 }
 #articles > div ul #a4 button {
   background-color: #94AFEE;
-  color: #293241;
+  color: #fff;
 }
 @media (min-width: 768px) {
   #articles > div ul #a5 {
@@ -776,5 +808,5 @@ footer img {
 }
 #articles > div ul #a5 button {
   background-color: #94AFEE;
-  color: #293241;
+  color: #fff;
 }

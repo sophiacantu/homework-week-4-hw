@@ -55,6 +55,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/images\/about\/city.jpg" : {
+      "ft" : 16384,
+      "iS" : 1271874,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/images\/about\/city.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/images\/about\/reel.jpg" : {
+      "ft" : 16384,
+      "iS" : 1153394,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/images\/about\/reel.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/images\/articles\/article1.jpg" : {
       "ft" : 16384,
       "iS" : 13088,
