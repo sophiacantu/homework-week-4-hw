@@ -5,10 +5,10 @@
 #headerLinks{
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". search .";
+    grid-template-areas: ". headerLinks .";
 
     >div{
-        grid-area: search;
+        grid-area: headerLinks;
         // border: 1px solid blue;
     }
 }

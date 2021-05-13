@@ -1,13 +1,13 @@
 /* =============
-    Articles
+    Film
 ============= */
 
-#articles{
+#film{
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". articles .";
+    grid-template-areas: ". film .";
 
     >div{
-        grid-area: articles;
+        grid-area: film;
     }
 }
