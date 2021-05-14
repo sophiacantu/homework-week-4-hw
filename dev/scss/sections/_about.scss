@@ -4,15 +4,11 @@
 
 #about{
     display: grid;
-    grid-template-columns: 16px auto auto 16px;
-    grid-template-areas: ". about about2 .";
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". about .";
  
     >div{
         grid-area: about;
         // border: 1px solid blue;
-    }
-
-    img{
-        width: 20%;
     }
 }
