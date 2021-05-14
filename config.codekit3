@@ -68,19 +68,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/images\/film\/SMfilmvideo.jpg" : {
-      "ft" : 16384,
-      "iS" : 4370,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/images\/film\/SMfilmvideo.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/images\/footer\/email-box.png" : {
       "ft" : 32768,
       "iS" : 3973,
