@@ -352,34 +352,34 @@ template {
 /* =============
     Base
 ============= */
-figure {
+body {
+  font-family: "Open Sans", sans-serif;
+}
+body figure {
   padding: 0;
   margin: 0;
 }
-
-ul {
+body ul {
   padding: 0;
   margin: 0;
 }
-ul li {
+body ul li {
   list-style: none;
 }
-
-.container-grid {
+body .container-grid {
   display: grid;
   grid-template-columns: auto 1200px auto;
   grid-template-areas: ". grid-content .";
   min-height: 100vh;
 }
-.container-grid .grid-content {
+body .container-grid .grid-content {
   grid-area: grid-content;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-img {
+body img {
   width: 100%;
 }
 
@@ -566,6 +566,23 @@ footer img {
 }
 #search > div form input {
   color: #293241;
+}
+@media (min-width: 768px) {
+  #search > div form input {
+    font-size: 1.875rem;
+    font-weight: 300;
+    color: #3D5A80;
+  }
+  #search > div form input::placeholder {
+    color: #3D5A80;
+    opacity: 1;
+  }
+  #search > div form input:-ms-input-placeholder {
+    color: #3D5A80;
+  }
+  #search > div form input::-ms-input-placeholder {
+    color: #3D5A80;
+  }
 }
 #search > div form button {
   background-color: #94AFEE;

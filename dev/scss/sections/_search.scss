@@ -18,6 +18,29 @@
 
         form{
             input{
+
+
+            @include md{
+
+                font-size: rem-calc(30);
+                font-weight: 300;
+                color: $grayBlue;
+
+                &::placeholder {
+                    color: $grayBlue;
+                    opacity: 1;
+                }
+
+                &:-ms-input-placeholder {
+                    color: $grayBlue;
+                }
+
+                &::-ms-input-placeholder {
+                    color: $grayBlue;
+                }
+
+            }
+
             color: $grayDark
             }
 
