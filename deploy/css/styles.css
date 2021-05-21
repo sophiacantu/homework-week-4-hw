@@ -353,7 +353,7 @@ template {
     Base
 ============= */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body figure {
   padding: 0;
@@ -387,7 +387,7 @@ body img {
     Typography
 ============= */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -407,6 +407,11 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
 /* =============
     Forms
 ============= */
@@ -475,6 +480,34 @@ textarea {
 }
 #header > div #headerText h4 {
   color: #fff;
+}
+#header > div section h1 {
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  #header > div section h1 {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 992px) {
+  #header > div section h1 {
+    font-size: 2.125rem;
+  }
+}
+#header > div section h4 {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  #header > div section h4 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  #header > div section h4 {
+    font-size: 1.25rem;
+  }
 }
 #header img {
   width: 40%;
@@ -570,7 +603,7 @@ footer img {
 @media (min-width: 768px) {
   #search > div form input {
     font-size: 1.875rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #3D5A80;
   }
   #search > div form input::placeholder {
@@ -581,6 +614,13 @@ footer img {
     color: #3D5A80;
   }
   #search > div form input::-ms-input-placeholder {
+    color: #3D5A80;
+  }
+}
+@media (min-width: 992px) {
+  #search > div form input {
+    font-size: 2.1875rem;
+    font-weight: 400;
     color: #3D5A80;
   }
 }
@@ -619,6 +659,38 @@ footer img {
 }
 #hero ul li a {
   grid-area: hero;
+}
+#hero ul li h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  #hero ul li h2 {
+    font-size: 1.5625rem;
+  }
+}
+#hero ul li p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  #hero ul li p {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 992px) {
+  #hero ul li p {
+    font-size: 1rem;
+  }
+}
+#hero ul li h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  #hero ul li h4 {
+    font-size: 1.125rem;
+  }
 }
 #hero ul #hero-sub-1 {
   background-color: #926FB1;
@@ -666,6 +738,20 @@ footer img {
 }
 #about ul li > div {
   grid-area: about;
+}
+#about ul li > div section h2 {
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  #about ul li > div section h2 {
+    font-size: 1.8125rem;
+  }
+}
+@media (min-width: 992px) {
+  #about ul li > div section h2 {
+    font-size: 1.9375rem;
+  }
 }
 #about ul li > div aside div {
   background-position: center;

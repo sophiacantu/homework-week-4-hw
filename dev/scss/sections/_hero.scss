@@ -34,6 +34,37 @@
                 grid-area: hero;
             }
 
+            h2{
+                font-size: rem-calc(18);
+                font-weight: 600;
+
+                @include lg{
+                    font-size: rem-calc(25);
+                }
+            }
+
+            p{
+                font-size: rem-calc(14);
+                font-weight: 400;
+
+                @include md{
+                    font-size: rem-calc(14);
+                }
+
+                @include lg{
+                    font-size: rem-calc(16);
+                }
+            }
+
+            h4{
+                font-size: rem-calc(18);
+                font-weight: 600;
+
+                @include lg{
+                    font-size: rem-calc(18);
+                }
+            }
+    
         }
 
         #hero-sub-1{
