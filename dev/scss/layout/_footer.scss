@@ -35,6 +35,26 @@ footer{
         
         }
 
+        h3{
+            font-size: rem-calc(20);
+            font-weight: 600;
+        }
+
+        h4{
+            font-size: rem-calc(16);
+            font-weight: 400;
+        }
+
+        address{
+            font-size: rem-calc(12);
+            font-weight: 400;
+        }
+
+        a{
+            font-size: rem-calc(12);
+            font-weight: 400;
+        }
+
         #location{
             @include md{
                 grid-area: location;
@@ -72,6 +92,11 @@ footer{
 
             ul{
                 color: $white
+            }
+
+            a{
+                font-size: rem-calc(20);
+                font-weight: 400;
             }
         }
     }

@@ -544,6 +544,22 @@ footer > div {
     grid-template-areas: "location signUp follow";
   }
 }
+footer > div h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+footer > div h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer > div address {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+footer > div a {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
 @media (min-width: 768px) {
   footer > div #location {
     grid-area: location;
@@ -575,6 +591,10 @@ footer > div #signUp button {
 }
 footer > div #follow ul {
   color: #fff;
+}
+footer > div #follow a {
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 footer img {
   width: 5%;
