@@ -7,85 +7,21 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
     background-color: $purpleDark;
-    height: 200px;
+    padding: 21px 0;
 
-    >div{
-        grid-area: header;
-        @include sm{
-            grid-template-columns: 10% auto;
-            grid-template-areas: 
-            "headerLogo headerText";
-        }
+    @include md{
+        padding: 24px 0;
+    }
+
+    img{
+       width: 2000%;
 
         @include md{
-            display: grid;
-            grid-template-columns: 35% auto;
-            grid-template-areas: 
-            "headerLogo headerText";
+            width: 2500%;
         }
 
-        @include xl{
-            grid-template-columns: 35% auto;
-            grid-template-areas: 
-            "headerLogo headerText";
-        }
 
-        li{
-        
-        }
 
-        #headerLogo{
-            @include md{
-                grid-area: headerLogo;
-            }
-        }
 
-        #headerText{
-            @include md{
-                grid-area: headerText;
-            }
-
-            h1{
-                color: $white
-            }
-
-            h4{
-                color: $white
-               }
-        }
-
-        section{
-
-            h1{
-                font-size: rem-calc(22);
-                font-weight: 400;
-
-                @include md{
-                    font-size: rem-calc(30);
-                }
-
-                @include lg{
-                    font-size: rem-calc(34);
-                }
-            }
-
-            h4{
-                font-size: rem-calc(12);
-                font-weight: 400;
-
-                @include md{
-                    font-size: rem-calc(16);
-                }
-
-                @include lg{
-                    font-size: rem-calc(20);
-                }
-            }
-
-        }
-
-    }
-    img{
-       width: 40%;
     }
 }

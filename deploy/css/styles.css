@@ -441,76 +441,20 @@ textarea {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
   background-color: #2D215D;
-  height: 200px;
-}
-#header > div {
-  grid-area: header;
-}
-@media (min-width: 576px) {
-  #header > div {
-    grid-template-columns: 10% auto;
-    grid-template-areas: "headerLogo headerText";
-  }
+  padding: 21px 0;
 }
 @media (min-width: 768px) {
-  #header > div {
-    display: grid;
-    grid-template-columns: 35% auto;
-    grid-template-areas: "headerLogo headerText";
-  }
-}
-@media (min-width: 1200px) {
-  #header > div {
-    grid-template-columns: 35% auto;
-    grid-template-areas: "headerLogo headerText";
-  }
-}
-@media (min-width: 768px) {
-  #header > div #headerLogo {
-    grid-area: headerLogo;
-  }
-}
-@media (min-width: 768px) {
-  #header > div #headerText {
-    grid-area: headerText;
-  }
-}
-#header > div #headerText h1 {
-  color: #fff;
-}
-#header > div #headerText h4 {
-  color: #fff;
-}
-#header > div section h1 {
-  font-size: 1.375rem;
-  font-weight: 400;
-}
-@media (min-width: 768px) {
-  #header > div section h1 {
-    font-size: 1.875rem;
-  }
-}
-@media (min-width: 992px) {
-  #header > div section h1 {
-    font-size: 2.125rem;
-  }
-}
-#header > div section h4 {
-  font-size: 0.75rem;
-  font-weight: 400;
-}
-@media (min-width: 768px) {
-  #header > div section h4 {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 992px) {
-  #header > div section h4 {
-    font-size: 1.25rem;
+  #header {
+    padding: 24px 0;
   }
 }
 #header img {
-  width: 40%;
+  width: 2000%;
+}
+@media (min-width: 768px) {
+  #header img {
+    width: 2500%;
+  }
 }
 
 /* =============
@@ -608,6 +552,12 @@ footer img {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
   background-color: #fff;
+  padding: 18px 0;
+}
+@media (min-width: 768px) {
+  #search {
+    padding: 22px 0;
+  }
 }
 @media (min-width: 1200px) {
   #search {
@@ -618,13 +568,17 @@ footer img {
   grid-area: search;
 }
 #search > div form input {
-  color: #293241;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3D5A80;
+  width: 250px;
 }
 @media (min-width: 768px) {
   #search > div form input {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     font-weight: 400;
     color: #3D5A80;
+    width: 430px;
   }
   #search > div form input::placeholder {
     color: #3D5A80;
@@ -639,7 +593,7 @@ footer img {
 }
 @media (min-width: 992px) {
   #search > div form input {
-    font-size: 2.1875rem;
+    font-size: 1.75rem;
     font-weight: 400;
     color: #3D5A80;
   }

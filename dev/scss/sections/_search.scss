@@ -7,6 +7,11 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
     background-color: #fff;
+    padding: 18px 0;
+
+    @include md{
+        padding: 22px 0;
+    }
 
     @include xl{
         grid-template-columns: auto 480px 16px;
@@ -19,12 +24,18 @@
         form{
             input{
 
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $grayBlue;
+            width: 250px;
+                
 
             @include md{
 
-                font-size: rem-calc(30);
+                font-size: rem-calc(28);
                 font-weight: 400;
                 color: $grayBlue;
+                width: 430px;
 
                 &::placeholder {
                     color: $grayBlue;
@@ -42,12 +53,11 @@
             }
 
             @include lg{
-                font-size: rem-calc(35);
+                font-size: rem-calc(28);
                 font-weight: 400;
                 color: $grayBlue;
             }
 
-            color: $grayDark
             }
 
             button{

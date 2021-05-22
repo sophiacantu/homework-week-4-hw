@@ -328,6 +328,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/images\/header\/header3.png" : {
+      "ft" : 32768,
+      "iS" : 202190,
+      "oA" : 0,
+      "oAP" : "\/deploy\/images\/header\/header3.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/images\/header\/header4.png" : {
+      "ft" : 32768,
+      "iS" : 147169,
+      "oA" : 0,
+      "oAP" : "\/deploy\/images\/header\/header4.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/images\/hero\/hero1.3.jpg" : {
       "ft" : 16384,
       "iS" : 2597346,
