@@ -27,7 +27,9 @@
             background-color: transparent;
             border: none;
             border-bottom: 1px solid $grayBlue;
-            width: 250px;
+            width: 300px;
+            border-radius: 0px;
+            font-size: rem-calc(20);
                 
 
             @include md{
@@ -35,7 +37,7 @@
                 font-size: rem-calc(28);
                 font-weight: 400;
                 color: $grayBlue;
-                width: 430px;
+                width: 415px;
 
                 &::placeholder {
                     color: $grayBlue;
@@ -56,13 +58,18 @@
                 font-size: rem-calc(28);
                 font-weight: 400;
                 color: $grayBlue;
+                width: 415px;
             }
 
             }
 
             button{
             background-color: $blue;
-            color: $grayDark
+            color: $grayDark;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: rem-calc(15);
             }
         }
     }
