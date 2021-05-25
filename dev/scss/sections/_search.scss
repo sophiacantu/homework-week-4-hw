@@ -68,8 +68,17 @@
             color: $grayDark;
             border: none;
             border-radius: 5px;
-            padding: 10px 15px;
+            padding: 8px 13px;
             font-size: rem-calc(15);
+
+            @include md{
+                font-size: rem-calc(18); 
+            }
+
+            @include lg{
+                font-size: rem-calc(18);
+            }
+
             }
         }
     }

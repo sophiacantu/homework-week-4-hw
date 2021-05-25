@@ -433,6 +433,10 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
 /* =============
     Header
 ============= */
@@ -606,21 +610,32 @@ footer img {
   color: #293241;
   border: none;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 8px 13px;
   font-size: 0.9375rem;
+}
+@media (min-width: 768px) {
+  #search > div form button {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 992px) {
+  #search > div form button {
+    font-size: 1.125rem;
+  }
 }
 
 /* =============
     Hero
 ============= */
 #hero img {
+  display: block;
   object-fit: cover;
   width: 100%;
 }
 @media (min-width: 768px) {
   #hero ul {
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 45% auto;
   }
 }
 @media (min-width: 992px) {
@@ -638,12 +653,37 @@ footer img {
     grid-template-columns: auto 480px 16px;
   }
 }
-#hero ul li a {
+#hero ul li a:link, #hero ul li a:visited {
   grid-area: hero;
+  color: white;
+  transition: 0.25s;
+  display: flex;
+}
+#hero ul li a:link div, #hero ul li a:visited div {
+  padding: 16px 0;
+}
+#hero ul li a:link:hover, #hero ul li a:link:active, #hero ul li a:visited:hover, #hero ul li a:visited:active {
+  color: black;
+  background-color: #fff;
+}
+#hero ul li a:link .hero-sub-bottom, #hero ul li a:visited .hero-sub-bottom {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+#hero ul li a:link .hero-sub-bottom h5, #hero ul li a:visited .hero-sub-bottom h5 {
+  display: none;
+}
+@media (min-width: 992px) {
+  #hero ul li a:link .hero-sub-bottom h5, #hero ul li a:visited .hero-sub-bottom h5 {
+    display: block;
+    margin-right: 10px;
+  }
 }
 #hero ul li h2 {
   font-size: 1.125rem;
   font-weight: 600;
+  font-variation-settings: "wght" 600;
 }
 @media (min-width: 992px) {
   #hero ul li h2 {
@@ -667,6 +707,7 @@ footer img {
 #hero ul li h4 {
   font-size: 1.125rem;
   font-weight: 600;
+  font-variation-settings: "wght" 600;
 }
 @media (min-width: 992px) {
   #hero ul li h4 {

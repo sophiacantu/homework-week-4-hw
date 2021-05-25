@@ -5,15 +5,16 @@
 #hero{
     
     img{
+        display: block;
         object-fit: cover;
-        width: 100%
+        width: 100%;
     }
   
     ul{
 
         @include md{
             display: grid;
-            grid-template-columns: 40% auto;
+            grid-template-columns: 45% auto;
         }
 
         @include lg{
@@ -30,13 +31,45 @@
                 grid-template-columns: auto 480px 16px;
             }
     
-            a{
+            a:link, a:visited{
                 grid-area: hero;
+                color: white;
+                transition: 0.25s;
+
+                display: flex;
+
+                div{
+                    padding: 16px 0;
+
+                }
+
+                &:hover, &:active{
+                    color: black;
+                    background-color: $white;
+                }
+
+                .hero-sub-bottom{
+                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
+                    h5{
+                    display: none;
+
+                    @include lg{
+                        display: block;
+                        margin-right: 10px;
+                    }
+                    }
+
+                }
+
+
             }
 
             h2{
                 font-size: rem-calc(18);
                 font-weight: 600;
+                font-variation-settings: "wght" 600;
 
                 @include lg{
                     font-size: rem-calc(25);
@@ -59,6 +92,7 @@
             h4{
                 font-size: rem-calc(18);
                 font-weight: 600;
+                font-variation-settings: "wght" 600;
 
                 @include lg{
                     font-size: rem-calc(18);
