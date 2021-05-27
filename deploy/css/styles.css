@@ -515,6 +515,13 @@ footer > div section ul li i {
   color: #CFDDFE;
   margin-right: 10px;
 }
+footer > div section ul li div {
+  display: flex;
+  align-items: center;
+}
+footer > div section ul li a:link, footer > div section ul li a:visited {
+  color: #CFDDFE;
+}
 footer > div h3 {
   font-size: 1.25rem;
   font-weight: 600;
@@ -537,7 +544,7 @@ footer > div a {
   }
 }
 footer > div #location h4 {
-  color: #CFDDFE;
+  color: #94AFEE;
 }
 footer > div #location address {
   color: #CFDDFE;
@@ -550,6 +557,7 @@ footer > div #location address {
 footer > div #signUp input {
   background-color: #CFDDFE;
   color: #293241;
+  border: none;
 }
 footer > div #signUp button {
   background-color: #94AFEE;
@@ -562,6 +570,11 @@ footer > div #signUp button {
 }
 footer > div #follow ul {
   color: #fff;
+  display: flex;
+  margin-top: 16px;
+}
+footer > div #follow ul li {
+  margin: 0 16px;
 }
 footer > div #follow a {
   font-size: 1.25rem;

@@ -48,6 +48,15 @@ footer{
                         color: $blueLight;
                         margin-right: 10px;
                     }
+
+                    div{
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    a:link, a:visited{
+                        color: $blueLight;
+                    }
                 }
             }
         }
@@ -78,7 +87,7 @@ footer{
             }
 
             h4{
-                color: $blueLight
+                color: $blue
             }
 
             address{
@@ -93,7 +102,8 @@ footer{
 
             input{
                 background-color: $blueLight;
-                color: $grayDark
+                color: $grayDark;
+                border: none;
             }
 
             button{
@@ -108,7 +118,13 @@ footer{
             }
 
             ul{
-                color: $white
+                color: $white;
+                display: flex;
+                margin-top: 16px;
+
+                li{
+                    margin: 0 16px;
+                }
             }
 
             a{
