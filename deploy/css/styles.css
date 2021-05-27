@@ -479,10 +479,17 @@ footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 32px 0;
+  }
 }
 @media (min-width: 1200px) {
   footer {
     grid-template-columns: auto 1200px auto;
+    padding: 64px 0;
   }
 }
 footer > div {
@@ -500,6 +507,13 @@ footer > div {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "location signUp follow";
   }
+}
+footer > div section ul li {
+  display: flex;
+}
+footer > div section ul li i {
+  color: #CFDDFE;
+  margin-right: 10px;
 }
 footer > div h3 {
   font-size: 1.25rem;
