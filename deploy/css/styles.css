@@ -407,9 +407,18 @@ p {
 /* =============
     Buttons
 ============= */
-button {
+.blue-button {
+  background-color: #94AFEE;
+  border: none;
   font-size: 0.875rem;
   font-weight: 400;
+  font-variation-settings: "wght" 400;
+  padding: 10px;
+  transition: 0.25s;
+}
+.blue-button:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /* =============
@@ -729,11 +738,15 @@ footer img {
 /* =============
     About
 ============= */
+#about {
+  padding: 16px 0;
+}
 @media (min-width: 768px) {
   #about {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". about-section .";
+    padding: 24px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -757,23 +770,35 @@ footer img {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". about .";
   background-color: #2D215D;
+  padding: 24px 0;
 }
 #about ul li > div {
   grid-area: about;
+  display: flex;
 }
-#about ul li > div section h2 {
+#about ul li > div section {
+  display: flex;
+  align-items: center;
+}
+#about ul li > div section > div h2 {
   font-size: 1.375rem;
   font-weight: 400;
 }
 @media (min-width: 768px) {
-  #about ul li > div section h2 {
+  #about ul li > div section > div h2 {
     font-size: 1.8125rem;
   }
 }
 @media (min-width: 992px) {
-  #about ul li > div section h2 {
+  #about ul li > div section > div h2 {
     font-size: 1.9375rem;
   }
+}
+#about ul li > div section button {
+  margin-top: 10px;
+}
+#about ul li > div aside {
+  margin-left: auto;
 }
 #about ul li > div aside div {
   background-position: center;
@@ -892,8 +917,12 @@ footer img {
 /* =============
     Articles
 ============= */
+#articles {
+  margin-bottom: 24px;
+}
 @media (min-width: 768px) {
   #articles {
+    margin-bottom: 24px;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". articles .";
@@ -901,6 +930,7 @@ footer img {
 }
 @media (min-width: 1200px) {
   #articles {
+    margin-bottom: 64px;
     grid-template-columns: auto 1200px auto;
   }
 }
@@ -908,6 +938,8 @@ footer img {
   color: #637275;
   font-size: 1.25rem;
   font-weight: 600;
+  margin-top: 16px;
+  padding: 0px 16px 24px;
 }
 @media (min-width: 768px) {
   #articles h2 {
@@ -972,9 +1004,13 @@ footer img {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". articles .";
+  padding: 16px 0;
 }
 #articles > div ul li section > div {
   grid-area: articles;
+}
+#articles > div ul li section > div button {
+  margin-top: 24px;
 }
 #articles > div ul #a1 {
   background-color: #CFDDFE;

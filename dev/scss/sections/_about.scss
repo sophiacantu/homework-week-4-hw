@@ -4,10 +4,13 @@
 
 #about{
 
+    padding: 16px 0;
+
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". about-section .";
+        padding: 24px 0;
     }
 
     @include xl{
@@ -31,29 +34,43 @@
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". about .";
             background-color: $purpleDark;
+            padding: 24px 0;
          
             >div{
                 grid-area: about;
                 // border: 1px solid blue;
 
+                display: flex;
+
                 section{
 
-                    h2{
-                        font-size: rem-calc(22);
-                        font-weight: 400;
+                    display: flex;
+                    align-items: center;
 
-                        @include md{
-                            font-size: rem-calc(29);
-                        }
-
-                        @include lg{
-                            font-size: rem-calc(31);
+                    >div{
+                        h2{
+                            font-size: rem-calc(22);
+                            font-weight: 400;
+    
+                            @include md{
+                                font-size: rem-calc(29);
+                            }
+    
+                            @include lg{
+                                font-size: rem-calc(31);
+                            }
                         }
                     }
+
+                    button{
+                        margin-top: 10px;
+                    }
+                
 
                 }
 
                 aside{
+                    margin-left: auto;
                     div{
                         background-position: center;
                         background-size: cover;
