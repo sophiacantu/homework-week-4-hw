@@ -549,17 +549,29 @@ footer > div #location h4 {
 footer > div #location address {
   color: #CFDDFE;
 }
+@media (min-width: 992px) {
+  footer > div #signUp {
+    margin-right: 60px;
+  }
+}
 @media (min-width: 768px) {
   footer > div #signUp {
     grid-area: signUp;
   }
 }
-footer > div #signUp input {
+footer > div #signUp form input {
   background-color: #CFDDFE;
-  color: #293241;
   border: none;
+  color: #293241;
+  padding: 16px 2%;
+  width: 96%;
+  border-radius: 0;
 }
 footer > div #signUp button {
+  display: flex;
+  margin-left: auto;
+  margin-top: 16px;
+  border: none;
   background-color: #94AFEE;
   color: #293241;
 }
@@ -575,6 +587,16 @@ footer > div #follow ul {
 }
 footer > div #follow ul li {
   margin: 0 16px;
+}
+@media (min-width: 768px) {
+  footer > div #follow ul li {
+    margin: 0 16px;
+  }
+}
+footer > div #follow ul li a:link,
+footer > div #follow ul li a:visited {
+  color: #fff;
+  font-size: 1.875rem;
 }
 footer > div #follow a {
   font-size: 1.25rem;

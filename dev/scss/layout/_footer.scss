@@ -87,28 +87,44 @@ footer{
             }
 
             h4{
-                color: $blue
+                color: $blue;
             }
 
             address{
-                color:  $blueLight
+                color:  $blueLight;
             }
         }
 
         #signUp{
+
+            @include lg{
+                margin-right: 60px;
+            }
+
             @include md{
                 grid-area: signUp;
             }
 
-            input{
-                background-color: $blueLight;
-                color: $grayDark;
-                border: none;
+            form{
+
+                input{
+                    background-color: $blueLight;
+                    border: none;
+                    color: $grayDark;
+                    padding: 16px 2%;
+                    width: 96%;
+                    border-radius: 0;;
+                }
+
             }
 
             button{
+                display: flex;
+                margin-left: auto;
+                margin-top: 16px;
+                border: none;
                 background-color: $blue;
-                color: $grayDark
+                color: $grayDark;
                }
         }
 
@@ -124,6 +140,16 @@ footer{
 
                 li{
                     margin: 0 16px;
+
+                    @include md{
+                        margin: 0 16px;
+                    }
+
+                    a:link,
+                    a:visited {
+                        color: $white;
+                        font-size: rem-calc(30);
+                    }
                 }
             }
 
