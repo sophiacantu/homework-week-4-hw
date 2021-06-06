@@ -2,26 +2,100 @@
     Header
 ============= */
 
-#header{
+// #header{
+//     display: grid;
+//     grid-template-columns: 16px auto 16px;
+//     grid-template-areas: ". header .";
+//     background-color: $purpleDark;
+//     padding: 21px 0;
+
+//     @include md{
+//         padding: 24px 0;
+//     }
+
+//     img{
+//        width: 2000%;
+
+//         @include md{
+//             width: 2500%;
+//         }
+
+//     }
+// }
+
+
+
+header {
+
+    background-color: $purpleDark;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
-    background-color: $purpleDark;
     padding: 21px 0;
 
     @include md{
         padding: 24px 0;
     }
 
-    img{
-       width: 2000%;
+    >div {
+        display: grid;
+        grid-template-areas:
+        "logo burger"
+        "nav nav";
+        grid-template-columns: 20% auto;
+        grid-area: header;
 
-        @include md{
-            width: 2500%;
+        @include lg{
+            grid-template-areas: "logo nav";
+            grid-template-columns: 20% auto;
         }
 
+    }
 
+    #logo-container{
+        grid-area: logo;
+        padding: 10px;
 
+        a:link, a:visited {
+            transition: 0.25s;
 
+            &:hover{
+            }
+        }
+
+    }
+
+    #burger-container{
+        background-color: $purpleDark;
+        align-items: center;
+        display: flex;
+        grid-area: burger;
+        padding: 10px;
+
+        @include lg{
+            display: none !important;
+        }
+
+        i{
+            margin-left: auto;
+            cursor: pointer;
+            font-size: rem-calc(30);
+        }
+    }
+
+    #nav-container{
+        background-color: $purpleDark;
+        display: none;
+        grid-area: nav;
+        padding: 20px 10px 10px;
+
+        @include lg{
+            background-color: $white;
+            display: block !important;
+        }
     }
 }

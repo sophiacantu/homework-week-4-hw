@@ -2,6 +2,51 @@
     Navigation
 ============= */
 
-a{
-    text-decoration: none;
+#nav-container{
+    ul{
+        height: 100%;
+
+        @include lg{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        li{
+            margin-bottom: 20px;
+            text-align: center;
+
+            @include lg{
+                align-items: center;
+                // border-right: 2px solid $blue;
+                display: flex;
+                margin-bottom: 0px;
+            }
+
+            a:link,
+            a:visited {
+                color: $white;
+                // font-family: 'Poppins', sans-serif; 
+                padding: 0 20px;
+                text-decoration: none;
+                transition: 0.25s;
+
+                @include lg {
+                    color: $black;
+                }
+
+                &:hover,
+                &:active {
+                    // color: $blue;
+                }
+            }
+        }
+
+        li:last-child {
+            border: none;
+        }
+    }
 }
+
+// a{
+//     text-decoration: none;
+// }
