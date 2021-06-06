@@ -40,25 +40,6 @@ footer{
 
         section{
 
-            ul{
-                li{
-                    display: flex;
-
-                    i{
-                        color: $blueLight;
-                        margin-right: 10px;
-                    }
-
-                    div{
-                        display: flex;
-                        align-items: center;
-                    }
-
-                    a:link, a:visited{
-                        color: $blueLight;
-                    }
-                }
-            }
         }
 
         h3{
@@ -84,6 +65,32 @@ footer{
         #location{
             @include md{
                 grid-area: location;
+            }
+
+            ul{
+                li{
+                    display: flex;
+
+                    i{
+                        color: $blueLight;
+                        margin-right: 10px;
+                    }
+
+                    div{
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    a:link, a:visited{
+                        color: $blueLight;
+
+
+                        &:hover,
+                        &:active{
+                            color:$blue;
+                        }
+                    }
+                }
             }
 
             h4{
@@ -133,22 +140,31 @@ footer{
                 grid-area: follow;
             }
 
+            @include xl{
+                text-align: right;
+            }
+
             ul{
-                color: $white;
                 display: flex;
                 margin-top: 16px;
+                justify-content: flex-end;
 
                 li{
                     margin: 0 16px;
 
                     @include md{
-                        margin: 0 16px;
+                        margin: 0 8px;
                     }
 
-                    a:link,
-                    a:visited {
+                    a:link, a:visited{
                         color: $white;
                         font-size: rem-calc(30);
+
+
+                        &:hover,
+                        &:active{
+                            color:$blue;
+                        }
                     }
                 }
             }

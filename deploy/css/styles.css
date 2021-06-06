@@ -508,20 +508,6 @@ footer > div {
     grid-template-areas: "location signUp follow";
   }
 }
-footer > div section ul li {
-  display: flex;
-}
-footer > div section ul li i {
-  color: #CFDDFE;
-  margin-right: 10px;
-}
-footer > div section ul li div {
-  display: flex;
-  align-items: center;
-}
-footer > div section ul li a:link, footer > div section ul li a:visited {
-  color: #CFDDFE;
-}
 footer > div h3 {
   font-size: 1.25rem;
   font-weight: 600;
@@ -542,6 +528,23 @@ footer > div a {
   footer > div #location {
     grid-area: location;
   }
+}
+footer > div #location ul li {
+  display: flex;
+}
+footer > div #location ul li i {
+  color: #CFDDFE;
+  margin-right: 10px;
+}
+footer > div #location ul li div {
+  display: flex;
+  align-items: center;
+}
+footer > div #location ul li a:link, footer > div #location ul li a:visited {
+  color: #CFDDFE;
+}
+footer > div #location ul li a:link:hover, footer > div #location ul li a:link:active, footer > div #location ul li a:visited:hover, footer > div #location ul li a:visited:active {
+  color: #94AFEE;
 }
 footer > div #location h4 {
   color: #94AFEE;
@@ -580,23 +583,30 @@ footer > div #signUp button {
     grid-area: follow;
   }
 }
+@media (min-width: 1200px) {
+  footer > div #follow {
+    text-align: right;
+  }
+}
 footer > div #follow ul {
-  color: #fff;
   display: flex;
   margin-top: 16px;
+  justify-content: flex-end;
 }
 footer > div #follow ul li {
   margin: 0 16px;
 }
 @media (min-width: 768px) {
   footer > div #follow ul li {
-    margin: 0 16px;
+    margin: 0 8px;
   }
 }
-footer > div #follow ul li a:link,
-footer > div #follow ul li a:visited {
+footer > div #follow ul li a:link, footer > div #follow ul li a:visited {
   color: #fff;
   font-size: 1.875rem;
+}
+footer > div #follow ul li a:link:hover, footer > div #follow ul li a:link:active, footer > div #follow ul li a:visited:hover, footer > div #follow ul li a:visited:active {
+  color: #94AFEE;
 }
 footer > div #follow a {
   font-size: 1.25rem;
