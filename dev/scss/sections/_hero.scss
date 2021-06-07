@@ -4,6 +4,7 @@
 
 #hero{
     
+    
     img{
         display: block;
         object-fit: cover;
@@ -32,6 +33,7 @@
             }
     
             a:link, a:visited{
+                text-decoration: none;
                 grid-area: hero;
                 color: white;
                 transition: 0.25s;

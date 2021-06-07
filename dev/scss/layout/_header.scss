@@ -67,6 +67,10 @@ header {
             }
         }
 
+        // img{
+        //     width: 200%;
+        // }
+
     }
 
     #burger-container{
@@ -84,6 +88,7 @@ header {
             margin-left: auto;
             cursor: pointer;
             font-size: rem-calc(30);
+            color: $white;
         }
     }
 
@@ -94,7 +99,7 @@ header {
         padding: 20px 10px 10px;
 
         @include lg{
-            background-color: $white;
+            // background-color: $white;
             display: block !important;
         }
     }
