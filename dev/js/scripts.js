@@ -1,12 +1,12 @@
 import $ from "jquery";
 
-let $nav = $('nav{date-nav}');
+let $nav = $('nav[data-nav]');
 let isVisible = false;
 
 $(".nav-btns").on("click", function(){
 
     if(isVisible === false){
-        $nav.sshoow();
+        $nav.show();
         isVisible = true;
     }
     else{
