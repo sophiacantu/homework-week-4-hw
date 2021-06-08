@@ -32,13 +32,21 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". header .";
-    padding: 21px 0;
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". header .";
+    // padding: 21px 0;
 
     @include md{
         padding: 24px 0;
+    }
+
+    @include lg{
+        padding: 16px 0;
+    }
+
+    @include xl{
+        padding: 16px 0;
     }
 
     >div {
@@ -93,7 +101,7 @@ header {
     }
 
     #nav-container{
-        background-color: $purpleDark;
+        background-color: $purpleDarker;
         display: none;
         grid-area: nav;
         padding: 20px 10px 10px;
