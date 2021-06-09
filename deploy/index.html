@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
     <!--Font Awesome-->
     <script src="http://kit.fontawesome.com/db8be9eca2.js" crossorigin="anonymous"></script>
@@ -16,54 +18,77 @@
 
 <body>
 
-    <header>
-    
+    <!-- <header>
+    <section id="header">
         <div>
             <section>
-                <img src="images/header/header_logo.png" alt="company logo">
+                <img src="images/header/header4.png" alt="company logo">
             </section>
         </div>
     
+    </section>
+    </header> -->
+    
+    <header>
+        <div>
+    
+        <section id="logo">
+            <img src="images/header/header4.png" alt="company logo">
+        </section>
+    
+        <section id="burger-container">
+        <i class="fas fa-bars nav-btns" id="burger-icon"></i>
+        </section>
+    
+        <nav id="nav-container" data-nav="main-navigation">
+            <ul>
+                <li><a href="#about" class="nav-btns">About</a></li>
+                <li><a href="#hero2" class="nav-btns">Gallery</a></li>
+                <li><a href="#articles" class="nav-btns">Articles</a></li>
+            </ul>
+        </nav>
+    
+        </div>
     </header>
 
     <section id="search">
     
         <div>
             <form action="POST">
-                <input type="text" placeholder="Search our upcoming events">
+                <input type="text" color= $grayDark placeholder="Search our upcoming events">
                 <button><i class="fas fa-search"></i></button>
             </form>
         </div>
     
     </section>
 
-    <img src="images/hero/hero1.3.jpg" alt="People in movie theater">
+    <img src="images/hero/hero3.jpg" alt="People in movie theater">
     
     <section id="hero">
     
         <div>
             <ul>
-                <li>
+                <li id="hero-sub-1">
                     <a href="#">
                         <div>
                             <h2>Become a Member</h2>
                             <p>Click here to sign up for special benefits</p>
                         </div>
     
-                        <div>
+                        <div class="hero-sub-bottom">
                             <h5>Details</h5>
                             <i class="fas fa-caret-right"></i>
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="hero-sub-2">
                     <a href="#">
                         <div>
                             <h2>Support Us</h2>
                             <p>Make a donation to our non-profit cinema</p>
                         </div>
     
-                        <div>
+                        <div class="hero-sub-bottom">
                             <h5>Details</h5>
                             <i class="fas fa-caret-right"></i>
                         </div>
@@ -75,86 +100,110 @@
     </section>
 
     <section id="about">
-         <div>
-            <img src="images/about/about1.png" alt="Film reel">
-            <h2>About Us</h2>
-            <button> <h4>Learn More</h4> </button>
-        </div>
-    </section>
+        <ul>
+            <li>
+                <div>
+                    <section>
+                        <div id="aboutUs">
+                            <h2>About Us</h2>
+                            <button class="blue-button"> <h4>Learn More</h4> </button>
+                        </div>
+                    </section>
+                    <aside>
+                        <div id="aboutLeft" ></div>
+                        <!-- <img src="images/about/about1.png" alt="Film reel"> -->
+                    </aside>
+                </div>
+            </li>
     
-    <section id="about">
-        <div>
-            <img src="images/about/about2.png" alt="New York City">
-            <h2>Plan Your Visit</h2>
-            <button> <h4>Get Tickets</h4> </button>
-        </div>
+            <li>
+                <div>
+                    <section>
+                        <div id="plan">
+                            <h2>Plan Your Visit</h2>
+                            <button class="blue-button"> <h4>Get Tickets</h4> </button>
+                        </div>
+                    </section>
+                    <aside> 
+                        <div id="planRight" ></div>
+                        <!-- <img src="images/about/about2.png" alt="New York City"> -->
+                    </aside>
+                </div>
+            </li>
+        </ul>
     </section>
 
     <section id="hero2">
-        <aside>
-            <img src="images/hero2/hero2two.jpg" alt="Man walking in city and camera">
-        </aside>
-    </section>
+        <ul>
+        <!-- <li id="h2-1"><img src="images/hero2/hero2two.jpg" alt="Man walking in city and camera"></li>
+        <li id="h2-2"><img src="images/hero2/hero2one.jpg" alt="Man walking in city and camera"></li>
+        <li id="h2-3"><img src="images/hero2/tickets.jpg" alt="Movie tickets"></li> -->
     
-    <section id="hero2">
-        <aside>
-            <img src="images/hero2/hero2one.jpg" alt="Man walking in city and camera">
-        </aside>
+        <li id="h2-1"></li>
+        <li id="h2-2"></li>
+        <li id="h2-3"></li>
+        </ul>
     </section>
 
     <section id="articles">
             <div>
-                <h2>Announcements</h2>
-            </div>
-    </section>
+                    <h2>Announcements</h2>
+                    <ul>
+                            <li id="a1">
+                                    <img src="images/articles/2guys.jpg" alt="Camera crew filming">
+                                    <section>
+                                            <div>
+                                             <h3>Celebrating 50 Years of New Directors/New Films</h3>
+                                             <p>The Museum of Modern Art and Film at Lincoln Center announce the 50th anniversary edition of New Directors/New Films (ND/NF), available April...</p>
+                                             <button class="blue-button"> <h4>Read More</h4> </button>
+                                            </div>
+                                    </section>
+                            </li>
     
-            <img src="images/articles/article1.jpg" alt="Camera crew filming">
+                            <li id="a2">
+                                    <img src="images/articles/booklets.jpg" alt="Film pamphlets">
+                                    <section>
+                                            <div>
+                                            <h3>Announcing Our Spring Programming Slate</h3>
+                                            <p>Film at Lincoln Center will reopen its theaters Friday, April 16, following a yearlong closure prompted by the COVID-19 pandemic. The safety of...</p>
+                                            <button class="blue-button"> <h4>Read More</h4> </button>
+                                            </div>
+                                    </section>
+                            </li>
     
-    <section id="articles">
-            <div>
-            <h3>Celebrating 50 Years of New Directors/New Films</h3>
-            <p>The Museum of Modern Art and Film at Lincoln Center announce the 50th anniversary edition of New Directors/New Films (ND/NF), available April...</p>
-            <button> <h4>Read More</h4> </button>
-            </div>
-    </section>
+                            <li id="a3">
+                                    <img src="images/articles/woman.jpg" alt="Woman on stage">
+                                    <section>
+                                            <div>
+                                            <h3>Neighboring Scenes 2021 Official Trailer & Free Talks!</h3>
+                                            <p>Film at Lincoln Center and Cinema Tropical are proud to bring you the sixth edition of Neighboring Scenes, an important and celebrated annual...</p>
+                                            <button class="blue-button"> <h4>Read More</h4> </button>
+                                            </div>
+                                    </section>
+                            </li>
     
-            <img src="images/articles/article2.jpg" alt="Film pamphlets">
+                            <li id="a4">
+                                    <img src="images/articles/doctors.jpg" alt="Surreal image of doctors operating">
+                                    <section>
+                                            <div>
+                                            <h3>FLC's Favorite Films Exploring Magical Realism</h3>
+                                            <p>To celebrate the theatrical release of Maya Da-Rin’s delicate and metaphorical first feature, The Fever, an official selection of the 49th New...</p>
+                                            <button class="blue-button"> <h4>Read More</h4> </button>
+                                            </div>
+                                    </section>
+                            </li>
     
-    <section id="articles">
-            <div>
-            <h3>Announcing Our Spring Programming Slate</h3>
-            <p>Film at Lincoln Center will reopen its theaters Friday, April 16, following a yearlong closure prompted by the COVID-19 pandemic. The safety of...</p>
-            <button> <h4>Read More</h4> </button>
-            </div>
-    </section>
-    
-            <img src="images/articles/article3.jpg" alt="Woman on stage">
-    
-    <section id="articles">
-            <div>
-            <h3>Neighboring Scenes 2021 Official Trailer & Free Talks!</h3>
-            <p>Film at Lincoln Center and Cinema Tropical are proud to bring you the sixth edition of Neighboring Scenes, an important and celebrated annual...</p>
-            <button> <h4>Read More</h4> </button>
-            </div>
-    </section>
-    
-            <img src="images/articles/article4.jpg" alt="Surreal image of doctors operating">
-    
-    <section id="articles">
-            <div>
-            <h3>FLC's Favorite Films Exploring Magical Realism</h3>
-            <p>To celebrate the theatrical release of Maya Da-Rin’s delicate and metaphorical first feature, The Fever, an official selection of the 49th New...</p>
-            <button> <h4>Read More</h4> </button>
-            </div>
-    </section>
-    
-            <img src="images/articles/article5.jpg" alt="A man's profile">
-    
-    <section id="articles">
-            <div>
-            <h3>Black Futures: Emerging Artists to Watch</h3>
-            <p>February 2021 marked the launch of Amplifying Voices, a new digital space that will recognize and celebrate diverse voices throughout the year...</p>
-            <button> <h4>Read More</h4> </button>
+                            <li id="a5">
+                                    <img src="images/articles/manprofile.jpg" alt="A man's profile">
+                                    <section>
+                                            <div>
+                                            <h3>Black Futures: Emerging Artists to Watch</h3>
+                                            <p>February 2021 marked the launch of Amplifying Voices, a new digital space that will recognize and celebrate diverse voices throughout the year...</p>
+                                            <button class="blue-button"> <h4>Read More</h4> </button>
+                                            </div>
+                                    </section>
+                            </li>
+                    </ul>
             </div>
     </section>
 
@@ -163,34 +212,47 @@
         <div>
             <section>
                 <h3>Contact Us</h3>
-                <h4>New York</h4>
+                <section id="location">
+                    <h4>New York</h4>
+                    <ul>
+                        <li>
+                            <div> 
+                                <i class="fas fa-location-arrow"></i>
+                            </div>
+    
+                            <address>70 Lincoln Center Plaza #4 <br>
+                                New York, NY 10023</address>
+    
+                        </li>
+    
+                        <li>
+                            <div>
+                                <i class="fas fa-mobile-alt"></i>
+                            </div> 
+                            
+                            <a href="tel:(212) 875-5610">(877)-526-9213</a>
+                        </li>
+                    </ul>
+                </section>
             </section>
     
-            <section>
-                    <img src="images/footer/location-arrow.png" alt="Location arrow">
-                    <h5>70 Lincoln Center Plaza #4 <br>
-                    New York, NY 10023</h5>
-            </section>
+            <section id="signUp">
+                    <h3>Get Our Weekly Newsletter</h3>
     
-            <section>
-                    <img src="images/footer/phone-icon.png" alt="Phone icon">
-                    <h5>(212) 875-5610</h5>
+                    <form action="POST">
+                        <input type="text" placeholder="Email address">
+                        <button class="blue-button"> <h4>Sign Up</h4> </button>
+                    </form>
             </section>
-        
-            <section>
-                <h3>Get Our Weekly Newsletter</h3>
-                <form action="POST">
-                    <input type="text" placeholder="Email address">
-                    <button> <h4>Sign Up</h4> </button>
-                </form>
-            </section>
-        
-            <section>
-                <h3>Follow Us</h3>
-                <img src="images/footer/youtube.png" alt="YouTube icon">
-                <img src="images/footer/twitter.png" alt="Twitter icon">
-                <img src="images/footer/instagram.png" alt="Instagram icon">
-                <img src="images/footer/facebook.png" alt="Facebook icon">
+            
+            <section id="follow">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    </ul>
             </section>
         </div>
     

@@ -3,11 +3,178 @@
 ============= */
 
 #articles{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". articles .";
+
+    margin-bottom: 24px;
+
+    @include md{
+        margin-bottom: 24px;
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". articles .";
+    }
+
+    @include xl{
+        margin-bottom: 64px;
+        grid-template-columns: auto 1200px auto;
+    }
+
+    h2{
+        color: $gray;
+        font-size: rem-calc(20);
+        font-weight: 600;
+        // margin-bottom: 16px;
+        margin-top: 16px;
+        padding: 0px 16px 24px;
+
+        @include md{
+             font-size: rem-calc(20);
+             font-weight: 600;
+        }
+
+        @include lg{
+            font-size: rem-calc(37);
+            font-weight: 400;
+        }
+    }
+
+    h3{
+        font-size: rem-calc(21);
+        font-weight: 600;
+
+        @include md{
+             font-size: rem-calc(24);
+             font-weight: 600;
+        }
+
+        @include lg{
+            font-size: rem-calc(21);
+            font-weight: 600;
+        }
+    }
+
+    p{
+        font-size: rem-calc(16);
+        font-weight: 400;
+    }
 
     >div{
-        grid-area: articles;
+
+        @include md{
+            grid-area: articles;
+        }
+
+        ul{
+
+            @include md{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "a1 a1 a2 a2"
+                "a3 a3 a4 a4"
+                ". a5 a5 .";
+                gap: 16px
+            }
+
+            @include lg{
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: 
+                "a1 a1 a2 a2 a3 a3"
+                ". a4 a4 a5 a5 ."
+            }
+
+            li{
+                background-color: #fff;
+                background-size: cover;
+                background-position: center;
+                img{
+                    width: 100%;
+                }
+    
+                section{ 
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". articles .";
+                    padding: 16px 0;  
+    
+                    >div{
+                        grid-area: articles;
+
+                        button{
+                            margin-top: 24px;
+                        }
+                    }
+                }
+            }
+
+            #a1{
+                @include md{
+                    grid-area: a1;
+                    background-color: $blueLight;
+                }
+
+                background-color: $blueLight;
+
+                button{
+                    background-color: $blue;
+                    color: $white
+                }
+            }
+
+            #a2{
+                @include md{
+                    grid-area: a2;
+                    background-color: $blueLight;
+                }
+
+                background-color: $blueLight;
+
+                button{
+                     background-color: $blue;
+                     color: $white
+                }
+            }
+
+            #a3{
+                @include md{
+                    grid-area: a3;
+                    background-color: $blueLight;
+                }
+
+                background-color: $blueLight;
+
+                button{
+                    background-color: $blue;
+                    color: $white
+                   }
+            }
+
+            #a4{
+                @include md{
+                    grid-area: a4;
+                    background-color: $blueLight;
+                }
+
+                background-color: $blueLight;
+
+                button{
+                    background-color: $blue;
+                    color: $white
+                   }
+            }
+
+            #a5{
+                @include md{
+                    grid-area: a5;
+                    background-color: $blueLight;
+                }
+
+                    background-color: $blueLight;
+
+                button{
+                    background-color: $blue;
+                    color: $white
+                   }
+            }
+        }
     }
 }

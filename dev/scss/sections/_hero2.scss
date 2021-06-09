@@ -1,3 +1,74 @@
 /* =============
     Hero2
 ============= */
+
+#hero2{
+
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+
+        grid-template-areas: ". hero2 .";
+    }
+
+    ul{
+        display:grid;
+        grid-template-rows: 360px 486px;
+
+        @include md{
+            grid-template-columns: 50% auto;
+            grid-template-rows: 625px;
+        }
+
+        @include lg{
+            grid-template-columns: 60% auto;
+        }
+
+        @include xl{
+            grid-area: hero2;
+            grid-template-columns: 65% auto;
+            grid-template-rows: 377px 377px;
+            grid-template-areas: 
+            "h2-1 h2-2"
+            "h2-1 h2-3";
+        }
+
+        li{
+            background-size: cover;
+            background-position: center;
+            // img{
+            //     width: 100%
+            // }
+        }
+
+        #h2-1{
+            background-image: url("../images/hero2/hero2two.jpg");
+
+            @include md{
+                background-position: 25% 50%;
+            }
+
+            @include xl{
+                grid-area: h2-1;
+            }
+        }
+
+        #h2-2{
+            background-image: url("../images/hero2/hero2one.jpg");
+
+            @include xl{
+                grid-area: h2-2;
+            }
+        }
+
+        #h2-3{
+            display: none;
+            background-image: url("../images/hero2/tickets.jpg");
+
+            @include xl{
+                display: list-item;
+                grid-area: h2-3;
+            }
+        }
+    }
+}

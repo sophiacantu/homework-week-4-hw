@@ -3,16 +3,124 @@
 ============= */
 
 #about{
-    display: grid;
-    grid-template-columns: 16px auto auto 16px;
-    grid-template-areas: ". about about2 .";
- 
-    >div{
-        grid-area: about;
-        // border: 1px solid blue;
+
+    padding: 16px 0;
+
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". about-section .";
+        padding: 24px 0;
     }
 
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
+
+    ul{
+
+        display: grid;
+        gap: 16px;
+
+        @include md{
+            grid-template-columns: 50% auto;
+            gap: 24px;
+            grid-area: about-section;
+        }
+
+        li{
+
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". about .";
+            background-color: $purpleDark;
+            padding: 24px 0;
+         
+            >div{
+                grid-area: about;
+                // border: 1px solid blue;
+
+                display: flex;
+
+                section{
+
+                    display: flex;
+                    align-items: center;
+
+                    >div{
+                        h2{
+                            font-size: rem-calc(22);
+                            font-weight: 400;
+    
+                            @include md{
+                                font-size: rem-calc(29);
+                            }
+    
+                            @include lg{
+                                font-size: rem-calc(31);
+                            }
+                        }
+                    }
+
+                    button{
+                        margin-top: 10px;
+                    }
+                
+
+                }
+
+                aside{
+                    margin-left: auto;
+                    div{
+                        background-position: center;
+                        background-size: cover;
+                        // border: 4px white solid;
+                        height: 85px;
+                        width: 85px;
+                        border-radius: 100%;
+
+                        @include md{
+                            height: 113px;
+                            width: 113px;
+                        }
+
+                        @include lg{
+                            height: 113px;
+                            width: 113px;
+                        }
+
+                        @include xl{
+                            height: 113px;
+                            width: 113px;
+                        }
+                    }
+
+                    #aboutLeft{
+                        background-image: url("../images/about/reel.jpg");
+                    }
+
+                    #planRight{
+                        background-image: url("../images/about/city.jpg");
+                    }
+                }
+
+                button{
+                    background-color: $blue;
+                    color: $grayDark
+                }
+
+                #aboutUs{
+                    color: $white
+                }
+
+                #plan{
+                    color: $white
+                }
+            }
+
+        }
+    }
     img{
-        width: 20%;
+        width: 15%;
     }
 }

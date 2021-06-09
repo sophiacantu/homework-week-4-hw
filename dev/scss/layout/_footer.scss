@@ -3,14 +3,178 @@
 ============= */
 
 footer{
+
+    background-color: $purpleDark;
+    color: $white;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
+
+    padding: 24px 0;
+
+    @include md{
+        padding: 32px 0;
+    }
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+        padding: 64px 0;
+    }
  
     >div{
         grid-area: footer;
-        background-color: blue;
         // border: 1px solid blue;
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "location signUp"
+            "location follow";
+        }
+
+        @include xl{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "location signUp follow"
+        }
+
+        section{
+
+        }
+
+        h3{
+            font-size: rem-calc(20);
+            font-weight: 600;
+        }
+
+        h4{
+            font-size: rem-calc(16);
+            font-weight: 400;
+        }
+
+        address{
+            font-size: rem-calc(12);
+            font-weight: 400;
+        }
+
+        a{
+            font-size: rem-calc(12);
+            font-weight: 400;
+        }
+
+        #location{
+            @include md{
+                grid-area: location;
+            }
+
+            ul{
+                li{
+                    display: flex;
+
+                    i{
+                        color: $blueLight;
+                        margin-right: 10px;
+                    }
+
+                    div{
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    a:link, a:visited{
+                        color: $blueLight;
+                        text-decoration: none;
+
+
+                        &:hover,
+                        &:active{
+                            color:$blue;
+                        }
+                    }
+                }
+            }
+
+            h4{
+                color: $blue;
+            }
+
+            address{
+                color:  $blueLight;
+            }
+        }
+
+        #signUp{
+
+            @include lg{
+                margin-right: 60px;
+            }
+
+            @include md{
+                grid-area: signUp;
+            }
+
+            form{
+
+                input{
+                    background-color: $blueLight;
+                    border: none;
+                    color: $grayDark;
+                    padding: 16px 2%;
+                    width: 96%;
+                    border-radius: 0;;
+                }
+
+            }
+
+            button{
+                display: flex;
+                margin-left: auto;
+                margin-top: 16px;
+                border: none;
+                background-color: $blue;
+                color: $grayDark;
+               }
+        }
+
+        #follow{
+            @include md{
+                grid-area: follow;
+            }
+
+            @include xl{
+                text-align: right;
+            }
+
+            ul{
+                display: flex;
+                margin-top: 16px;
+                justify-content: flex-end;
+
+                li{
+                    margin: 0 16px;
+
+                    @include md{
+                        margin: 0 8px;
+                    }
+
+                    a:link, a:visited{
+                        color: $white;
+                        font-size: rem-calc(30);
+
+
+                        &:hover,
+                        &:active{
+                            color:$blue;
+                        }
+                    }
+                }
+            }
+
+            a{
+                font-size: rem-calc(20);
+                font-weight: 400;
+            }
+        }
     }
 
     img{
